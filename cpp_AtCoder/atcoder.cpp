@@ -5,5 +5,5 @@ const int mod = 1000000007;
 
 int main()
 {
-
+	cout << "pikachu" << endl;
 }
