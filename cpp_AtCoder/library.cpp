@@ -44,7 +44,7 @@ bool is_prime(Type x)
 	if (x == 2) return true;
 	if (x < 2 || x % 2 == 0) return false;
 
-	for (Type i = 3; i <= sqrt(x); i += 2) {
+	for (Type i = 3; i * i <= x; i += 2) {
 		if (x % i == 0) return false;
 	}
 	return true;
