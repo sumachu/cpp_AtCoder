@@ -156,7 +156,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="atcoder.cpp" />
-    <ClCompile Include="library.cpp" />
+    <ClCompile Include="BinarySearch.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="Mint.cpp" />
+    <ClCompile Include="Prime.cpp" />
+    <ClCompile Include="UnionFind.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

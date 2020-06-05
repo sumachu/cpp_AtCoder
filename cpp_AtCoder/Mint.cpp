@@ -10,7 +10,7 @@ private:
     ll x;
 public:
     Mint(ll x = 0) :x((x% mod + mod) % mod) {}
-    ll get() const { return x; }
+    ll Get() const { return x; }
     Mint operator-() const { return Mint(-x); }
     Mint& operator+=(const Mint a)
     {
@@ -40,7 +40,7 @@ public:
     Mint& operator/=(const Mint a) { return *this *= a.inv(); }
     Mint operator/(const Mint a) const { return Mint(*this) /= a; }
 };
-ostream& operator<<(ostream& os, const Mint& a) { return os << a.get(); }
+inline ostream& operator<<(ostream& os, const Mint& a) { return os << a.Get(); }
 
 class Combination
 {
