@@ -49,3 +49,15 @@ bool PrimeJudge(Type x)
 	}
 	return true;
 }
+
+// 10進数整数aをn進数文字列として取得するメソッド
+template<class Type>
+string ToString(Type a, Type n)
+{
+	string s;
+	while (a) {
+		s = to_string(a % n) + s;
+		a /= n;
+	}
+	return s;
+}
