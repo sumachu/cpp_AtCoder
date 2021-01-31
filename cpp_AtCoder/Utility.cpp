@@ -4,6 +4,7 @@ using ll = long long;
 const int mod = 1000000007;
 const double PI = acos(-1);
 
+// 繰り返し二乗法
 template<class Type>
 Type ModPow(Type a, Type n, Type mod)
 {
@@ -18,6 +19,7 @@ Type ModPow(Type a, Type n, Type mod)
 	return res;
 }
 
+// 最大公約数
 template<class Type>
 Type GCD(Type x, Type y)
 {
@@ -32,12 +34,14 @@ Type GCD(Type x, Type y)
 	return x;
 }
 
+// 最小公倍数
 template<class Type>
 Type LCM(Type x, Type y)
 {
 	return x / GCD(x, y) * y;
 }
 
+// 素数判定
 template<class Type>
 bool PrimeJudge(Type x)
 {
@@ -50,7 +54,7 @@ bool PrimeJudge(Type x)
 	return true;
 }
 
-// 10進数整数aをn進数文字列として取得するメソッド
+// 10進数整数aをn進数文字列として取得
 template<class Type>
 string ToString(Type a, Type n)
 {
@@ -60,4 +64,18 @@ string ToString(Type a, Type n)
 		a /= n;
 	}
 	return s;
+}
+
+// 約数列挙
+vector<ll> EnumerateDivisors(ll n)
+{
+	vector<ll> divisors;
+	for (ll i = 1; i * i <= n; i++) {
+		if (n % i == 0) {
+			divisors.push_back(i);
+			if (n / i != i) divisors.push_back(n / i);
+		}
+	}
+	sort(divisors.begin(), divisors.end());
+	return divisors;
 }
