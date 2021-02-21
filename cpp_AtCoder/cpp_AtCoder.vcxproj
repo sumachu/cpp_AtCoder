@@ -158,6 +158,7 @@
   <ItemGroup>
     <ClCompile Include="atcoder.cpp" />
     <ClCompile Include="BinarySearch.cpp" />
+    <ClCompile Include="Dijkstra.cpp" />
     <ClCompile Include="Utility.cpp" />
     <ClCompile Include="Mint.cpp" />
     <ClCompile Include="Prime.cpp" />
