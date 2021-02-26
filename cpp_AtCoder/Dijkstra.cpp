@@ -20,19 +20,16 @@ using Glaph = vector<vector<Edge>>;
 
 //int main()
 //{
-//	// 出典：ALDS1_12_C（単一始点最短経路 II）
-//	// https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/all/ALDS1_12_C
-//	int n;
-//	cin >> n;
+//	// 出典：典型アルゴリズム問題集 D-単一始点最短経路問題
+//	// https://atcoder.jp/contests/typical-algorithm/tasks/typical_algorithm_d
+//	int n, m;
+//	cin >> n >> m;
 //	Glaph glaph(n);
-//	for (int i = 0; i < n; i++) {
-//		int u, k;
-//		cin >> u >> k;
-//		for (int j = 0; j < k; j++) {
-//			int v, c;
-//			cin >> v >> c;
-//			glaph[u].push_back(Edge(v, c));
-//		}
+//	for (int i = 0; i < m; i++) {
+//		int v, u;
+//		ll c;
+//		cin >> v >> u >> c;
+//		glaph[v].push_back(Edge(u, c));
 //	}
 //
 //	// 探索開始頂点
@@ -67,5 +64,5 @@ using Glaph = vector<vector<Edge>>;
 //		}
 //	}
 //
-//	for (int i = 0; i < n; i++) cout << i << " " << dist[i] << endl;
+//	cout << dist[n - 1] << endl;
 //}
