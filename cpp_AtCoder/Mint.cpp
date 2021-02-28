@@ -78,7 +78,7 @@ Mint inv_nCk(Type n, Type k)
 template<class Type>
 Type pascal_nCk(Type n, Type k, Type mod)
 {
-	//  1 <= k <= n <= 2e7Amod‚Í‘f”ˆÈŠO‚Å‚à‰Â
+	//  1 <= k <= n <= 2e3Amod‚Í‘f”ˆÈŠO‚Å‚à‰Â
 	vector<vector<Type>> dp(n + 1, vector<Type>(n + 1, 0));
 	for (int i = 0; i <= n; i++) {
 		dp[i][0] = 1;
